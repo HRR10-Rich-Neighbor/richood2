@@ -56,7 +56,7 @@ function UtilService($window) {
   return Util;
 }
 
-angular.module('richoodApp.util')
+angular.module('bApp.util')
   .factory('Util', UtilService);
 
 })();

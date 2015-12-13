@@ -3,7 +3,7 @@
 describe('Directive: oauthButtons', function() {
 
   // load the directive's module and view
-  beforeEach(module('richoodApp'));
+  beforeEach(module('bApp'));
   beforeEach(module('components/oauth-buttons/oauth-buttons.html'));
 
   var element, parentScope, elementScope;
@@ -23,7 +23,7 @@ describe('Directive: oauthButtons', function() {
 
   it('should contain anchor buttons', function() {
     compileDirective('<oauth-buttons></oauth-buttons>');
-    element.find('a.btn').length.should.be.at.least(1);
+    element.find('a.btn.btn-social').length.should.be.at.least(1);
   });
 
   it('should evaluate and bind the classes attribute to scope.classes', function() {
@@ -37,11 +37,11 @@ describe('Directive: oauthButtons', function() {
     // Add classes
     elementScope.classes = 'testClass1 testClass2';
     elementScope.$digest();
-    element.find('a.btn.testClass1.testClass2').length.should.be.at.least(1);
+    element.find('a.btn.btn-social.testClass1.testClass2').length.should.be.at.least(1);
 
     // Remove classes
     elementScope.classes = '';
     elementScope.$digest();
-    element.find('a.btn.testClass1.testClass2').length.should.equal(0);
+    element.find('a.btn.btn-social.testClass1.testClass2').length.should.equal(0);
   });
 });

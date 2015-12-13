@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('richoodApp.admin', [
-  'richoodApp.auth',
+angular.module('bApp.admin', [
+  'bApp.auth',
   'ui.router'
 ]);

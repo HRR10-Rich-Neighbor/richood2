@@ -27,5 +27,5 @@ class SettingsController {
   }
 }
 
-angular.module('richoodApp')
+angular.module('bApp')
   .controller('SettingsController', SettingsController);

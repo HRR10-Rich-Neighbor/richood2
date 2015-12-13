@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('richoodApp.auth', [
-  'richoodApp.constants',
-  'richoodApp.util',
+angular.module('bApp.auth', [
+  'bApp.constants',
+  'bApp.util',
   'ngCookies',
   'ui.router'
 ])

@@ -1,15 +1,19 @@
 'use strict';
 
-angular.module('richoodApp', [
-  'richoodApp.auth',
-  'richoodApp.admin',
-  'richoodApp.constants',
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ui.router',
-  'validation.match'
-])
+angular.module('bApp', [
+    'bApp.auth',
+    'bApp.admin',
+    'bApp.geolocation',
+    'bApp.MainController',
+    'bApp.CampaignProfileController',
+    'bApp.constants',
+    'ngCookies',
+    'ngResource',
+    'ngSanitize',
+    'ui.router',
+    'validation.match',
+    'bApp.StartCampaignController'
+  ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
       .otherwise('/');

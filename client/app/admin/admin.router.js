@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('richoodApp.admin')
+angular.module('bApp.admin')
   .config(function($stateProvider) {
     $stateProvider
       .state('admin', {

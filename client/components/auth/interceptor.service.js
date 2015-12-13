@@ -26,7 +26,7 @@ function authInterceptor($rootScope, $q, $cookies, $injector, Util) {
   };
 }
 
-angular.module('richoodApp.auth')
+angular.module('bApp.auth')
   .factory('authInterceptor', authInterceptor);
 
 })();

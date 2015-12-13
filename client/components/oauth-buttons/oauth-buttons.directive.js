@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('richoodApp')
+angular.module('bApp')
   .directive('oauthButtons', function() {
     return {
       templateUrl: 'components/oauth-buttons/oauth-buttons.html',

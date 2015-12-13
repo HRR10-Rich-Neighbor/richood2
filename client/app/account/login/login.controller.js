@@ -31,5 +31,5 @@ class LoginController {
   }
 }
 
-angular.module('richoodApp')
+angular.module('bApp')
   .controller('LoginController', LoginController);

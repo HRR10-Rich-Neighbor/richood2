@@ -15,7 +15,7 @@ class AdminController {
   }
 }
 
-angular.module('richoodApp.admin')
+angular.module('bApp.admin')
   .controller('AdminController', AdminController);
 
 })();

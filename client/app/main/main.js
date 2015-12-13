@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('richoodApp')
+angular.module('bApp')
   .config(function($stateProvider) {
     $stateProvider
       .state('main', {
@@ -8,5 +8,19 @@ angular.module('richoodApp')
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
-      });
-  });
+      })
+      .state('campaignProfile', {
+        url: '/campaignProfile/:id',
+        templateUrl: 'app/campaignProfile/campaignProfile.html',
+        controller: 'CampaignProfileController',
+        //controllerAs: 'campaignProfile'
+      })
+
+  })
+    .run(['$http', '$rootScope', function($http, $rootScope) {
+    $rootScope.campaigns =  {};
+    $http.get('/api/campaigns')
+        .success(function(data) {
+           $rootScope.campaigns = data;
+        })
+}])

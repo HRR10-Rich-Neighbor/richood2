@@ -17,5 +17,5 @@ class NavbarController {
   }
 }
 
-angular.module('richoodApp')
+angular.module('bApp')
   .controller('NavbarController', NavbarController);

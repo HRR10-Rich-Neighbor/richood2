@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('richoodApp')
+angular.module('bApp')
   .config(function($stateProvider) {
     $stateProvider
       .state('login', {

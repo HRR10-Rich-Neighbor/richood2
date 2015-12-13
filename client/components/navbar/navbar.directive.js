@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('richoodApp')
+angular.module('bApp')
   .directive('navbar', () => ({
     templateUrl: 'components/navbar/navbar.html',
     restrict: 'E',

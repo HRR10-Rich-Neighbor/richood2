@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('richoodApp.util', []);
+angular.module('bApp.util', []);

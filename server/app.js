@@ -6,6 +6,7 @@
 
 import express from 'express';
 import mongoose from 'mongoose';
+import sqldb from './sqldb';
 import config from './config/environment';
 import http from 'http';
 
@@ -32,7 +33,11 @@ function startServer() {
   });
 }
 
-setImmediate(startServer);
+sqldb.sequelize.sync()
+  .then(startServer)
+  .catch(function(err) {
+    console.log('Server failed to start due to error: %s', err);
+  });
 
 // Expose app
 exports = module.exports = app;
