@@ -17,7 +17,7 @@
       "js": true,
       "babel": true,
       "html": true,
-      "css": true,
+      "scss": true,
       "uirouter": true,
       "bootstrap": false,
       "uibootstrap": false,
